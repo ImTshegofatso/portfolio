@@ -183,8 +183,11 @@ export function HeroCanvas() {
     const onPointerMove = (e: MouseEvent | TouchEvent) => {
       if (isDragging && sceneGroupRef.current) {
         const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
+        const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
         const deltaX = clientX - previousPosition.x;
+        const deltaY = clientY - previousPosition.y;
         sceneGroupRef.current.rotation.y += deltaX * 0.01;
+        sceneGroupRef.current.rotation.x += deltaY * 0.01;
         previousPosition = { x: clientX, y: clientY };
       }
     };
