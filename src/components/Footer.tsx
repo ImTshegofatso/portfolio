@@ -1,5 +1,3 @@
-import React from 'react';
-
 const quickLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Projects', href: '#projects' },
