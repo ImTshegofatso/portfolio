@@ -1,4 +1,3 @@
-import React from 'react';
 import ytdownloader from '../assets/ytdownloader.png';
 import aimusic from '../assets/aimusic.png';
 import superbalist from '../assets/superbalist.jpg';
